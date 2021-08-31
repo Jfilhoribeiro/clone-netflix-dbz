@@ -1,0 +1,130 @@
+/*Globals=======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+
+:root {
+    --corvermelho: #E50914;
+    --corpreto: #141414;
+    --corbranca: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--corpreto);
+    color: var(--corbranca);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+/*Header=========================================*/
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo strong {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin: 12px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+header nav a:hover {
+    color: var(--corbranca);
+}
+
+/*main=========================================*/
+.movie-initial {
+    font-size: 16px;
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, .50)100%), url(/img/dragon-ball-ztentativadefundo.png);
+
+    height: 400px;
+    background-size: cover;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.movie-initial .title {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.movie-initial .description {
+    max-width: 80%;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    font-family: 'Comic Neue', cursive;
+}
+
+.button {
+    background-color: rgba(0,0,0,.60);
+    border: none;
+    color: #fff;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.movie-initial .container {
+    width: 70%;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-films {
+    margin-top: 5px;
+}
